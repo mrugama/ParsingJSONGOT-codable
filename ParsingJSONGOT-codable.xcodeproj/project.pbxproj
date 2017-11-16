@@ -14,6 +14,10 @@
 		816E128D1FBDF94000C037F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816E128B1FBDF94000C037F2 /* LaunchScreen.storyboard */; };
 		816E12981FBDF94000C037F2 /* ParsingJSONGOT_codableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816E12971FBDF94000C037F2 /* ParsingJSONGOT_codableTests.swift */; };
 		816E12A31FBDF94000C037F2 /* ParsingJSONGOT_codableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816E12A21FBDF94000C037F2 /* ParsingJSONGOT_codableUITests.swift */; };
+		816E12B21FBDF97D00C037F2 /* gameofthronesinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 816E12B11FBDF97D00C037F2 /* gameofthronesinfo.json */; };
+		816E12B41FBDFA0D00C037F2 /* GOTEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816E12B31FBDFA0D00C037F2 /* GOTEpisode.swift */; };
+		816E12B61FBE050900C037F2 /* PodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816E12B51FBE050900C037F2 /* PodInfo.swift */; };
+		816E12B81FBE088200C037F2 /* podcastinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 816E12B71FBE088200C037F2 /* podcastinfo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		816E129E1FBDF94000C037F2 /* ParsingJSONGOT-codableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParsingJSONGOT-codableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		816E12A21FBDF94000C037F2 /* ParsingJSONGOT_codableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingJSONGOT_codableUITests.swift; sourceTree = "<group>"; };
 		816E12A41FBDF94000C037F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816E12B11FBDF97D00C037F2 /* gameofthronesinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameofthronesinfo.json; sourceTree = "<group>"; };
+		816E12B31FBDFA0D00C037F2 /* GOTEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTEpisode.swift; sourceTree = "<group>"; };
+		816E12B51FBE050900C037F2 /* PodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodInfo.swift; sourceTree = "<group>"; };
+		816E12B71FBE088200C037F2 /* podcastinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = podcastinfo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		816E12761FBDF94000C037F2 = {
 			isa = PBXGroup;
 			children = (
+				816E12B71FBE088200C037F2 /* podcastinfo.json */,
+				816E12B11FBDF97D00C037F2 /* gameofthronesinfo.json */,
 				816E12811FBDF94000C037F2 /* ParsingJSONGOT-codable */,
 				816E12961FBDF94000C037F2 /* ParsingJSONGOT-codableTests */,
 				816E12A11FBDF94000C037F2 /* ParsingJSONGOT-codableUITests */,
@@ -97,11 +107,12 @@
 		816E12811FBDF94000C037F2 /* ParsingJSONGOT-codable */ = {
 			isa = PBXGroup;
 			children = (
-				816E12821FBDF94000C037F2 /* AppDelegate.swift */,
+				816E12B01FBDF95200C037F2 /* Supported Files */,
 				816E12841FBDF94000C037F2 /* ViewController.swift */,
+				816E12B31FBDFA0D00C037F2 /* GOTEpisode.swift */,
+				816E12B51FBE050900C037F2 /* PodInfo.swift */,
 				816E12861FBDF94000C037F2 /* Main.storyboard */,
 				816E12891FBDF94000C037F2 /* Assets.xcassets */,
-				816E128B1FBDF94000C037F2 /* LaunchScreen.storyboard */,
 				816E128E1FBDF94000C037F2 /* Info.plist */,
 			);
 			path = "ParsingJSONGOT-codable";
@@ -123,6 +134,15 @@
 				816E12A41FBDF94000C037F2 /* Info.plist */,
 			);
 			path = "ParsingJSONGOT-codableUITests";
+			sourceTree = "<group>";
+		};
+		816E12B01FBDF95200C037F2 /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				816E12821FBDF94000C037F2 /* AppDelegate.swift */,
+				816E128B1FBDF94000C037F2 /* LaunchScreen.storyboard */,
+			);
+			path = "Supported Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816E12B21FBDF97D00C037F2 /* gameofthronesinfo.json in Resources */,
 				816E128D1FBDF94000C037F2 /* LaunchScreen.storyboard in Resources */,
+				816E12B81FBE088200C037F2 /* podcastinfo.json in Resources */,
 				816E128A1FBDF94000C037F2 /* Assets.xcassets in Resources */,
 				816E12881FBDF94000C037F2 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +283,8 @@
 			files = (
 				816E12851FBDF94000C037F2 /* ViewController.swift in Sources */,
 				816E12831FBDF94000C037F2 /* AppDelegate.swift in Sources */,
+				816E12B41FBDFA0D00C037F2 /* GOTEpisode.swift in Sources */,
+				816E12B61FBE050900C037F2 /* PodInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
